@@ -1,13 +1,108 @@
+/*FONTS*/
+@import url("https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;500&family=Montserrat&display=swap");
+/* for future reference */
+font-family: "AR One Sans", sans-serif;
+font-family: "Montserrat", sans-serif;
+/* for future reference */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* border: 0.5px solid black; */
 }
+:root {
+  --title-fonts: "AR One Sans", sans-serif;
+  --paragraph-fonts: "Montserrat", sans-serif;
+}
+
 body {
-  /* max-width: 425px; */
+  min-width: 425px;
+  /*  height: 100vh;
+  width: 100vw; */
+  margin: 0;
+  background-color: rgb(196, 226, 236);
+}
+
+.header {
+  height: 4rem;
+  width: 100%;
+  background-color: white;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.header__logo {
+  width: 10rem;
+
+  margin-right: auto;
+}
+.header__nav .navbar__list {
+  list-style: none;
+  align-items: center;
+  display: flex;
+}
+
+.header__nav a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.795);
+  font-family: var(--title-fonts);
+  font-weight: 600;
+
+  margin: 0 0.5rem 0rem 0.5rem;
+}
+
+.background-image {
+  background-image: url(./assets/img/09-day.jpg);
+  background-size: cover;
+  padding: 2rem 0 2rem 0;
+  background-position: 50% 83%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.background-image__textbox--shade {
+  background-color: rgba(0, 0, 0, 0.25);
+  text-align: center;
+  border-radius: 0.25rem;
+  font-family: var(--title-fonts);
+}
+
+.main__services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main__services .services__title {
+  padding-bottom: 1rem;
+  font-family: var(--title-fonts);
+}
+.services__activities img {
+  height: 2rem;
+}
+.activities__title {
+  font-family: var(--title-fonts);
+}
+.activities__text {
+  font-family: var(--paragraph-fonts);
+  font-size: 0.875rem;
+}
+.services__activities {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  width: 12rem;
   height: auto;
-  background-color: lightblue;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+  background: linear-gradient(to bottom, #55eabd9b, #78c3f237);
+}
+
+@media (min-width: 425px) {
 }
 
 /* .menu {

@@ -12,23 +12,32 @@
   </head>
   <body>
     <header class="header">
+      <img
+        class="header__logo"
+        src="./assets/logo/bonz.ai-logo-color-landscape.png"
+        alt="logo"
+      />
       <nav class="header__nav">
-        <img class="header__logo" src="./assets/logo/bonz.ai-logo-color-landscape.png" alt="logo"></figure>
         <ul class="navbar__list">
           <li class="navbar__listitem"><a href="./index.html">HOME</a></li>
-          <li class="navbar__listitem"><a href="./options.html">OUR ROOMS</a></li>
-          <li class="navbar__listitem"><a href="">OUR CONCEPT</a></li>
+          <li class="navbar__listitem">
+            <a href="./options.html">ROOMS</a>
+          </li>
+          <li class="navbar__listitem"><a href="">CONCEPT</a></li>
         </ul>
       </nav>
     </header>
     <section class="background-image">
-      <h1 class="background-image__title">Luxorious Rooms</h1>
-      <p class="background-image__text">Deluxe Rooms starting at 299$</p>
+      <article class="background-image__textbox--shade">
+        <h1 class="background-image__title">Luxorious Rooms</h1>
+        <p class="background-image__text">Deluxe Rooms starting at 299$</p>
+      </article>
     </section>
     <main>
-      <section class="services">
+      <section class="main__services">
         <h2 class="services__title">Services</h2>
         <article class="services__activities">
+          <img src="./assets/icon/wine.svg" alt="Wine glass" />
           <h3 class="activities__title">Evening</h3>
           <p class="activities__text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
@@ -36,6 +45,7 @@
           </p>
         </article>
         <article class="services__activities">
+          <img src="./assets/icon/walk.svg" alt="Walking person" />
           <h3 class="activities__title">Adventure</h3>
           <p class="activities__text">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -43,6 +53,7 @@
           </p>
         </article>
         <article class="services__activities">
+          <img src="./assets/icon/bus.svg" alt="Bus" />
           <h3 class="activities__title">Travel</h3>
           <p class="activities__text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla rerum
@@ -51,6 +62,7 @@
           </p>
         </article>
         <article class="services__activities">
+          <img src="./assets/icon/beer.svg" alt="Beer glass" />
           <h3 class="activities__title">Party</h3>
           <p class="activities__text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
@@ -59,7 +71,7 @@
           </p>
         </article>
       </section>
-      <section class="featured">
+      <section class="main__featured">
         <h2 class="featured__heading">Featured Rooms</h2>
         <figure class="featured__card">
           <h3 class="card__title">Presidential Rooms</h3>
