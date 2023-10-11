@@ -34,7 +34,7 @@ body {
 }
 .header__logo {
   width: 10rem;
-
+  padding-left: 0.5rem;
   margin-right: auto;
 }
 .header__nav .navbar__list {
@@ -49,11 +49,12 @@ body {
   font-family: var(--title-fonts);
   font-weight: 600;
 
-  margin: 0 0.5rem 0rem 0.5rem;
+  margin: 0 0.5rem 0rem 0rem;
 }
 
 .background-image {
   background-image: url(./assets/img/09-day.jpg);
+
   background-size: cover;
   padding: 2rem 0 2rem 0;
   background-position: 50% 83%;
@@ -62,10 +63,11 @@ body {
   align-items: center;
 }
 .background-image__textbox--shade {
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.4);
   text-align: center;
   border-radius: 0.25rem;
   font-family: var(--title-fonts);
+  color: rgba(255, 255, 255, 0.664);
 }
 
 .main__services {
@@ -75,34 +77,125 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
-.main__services .services__title {
-  padding-bottom: 1rem;
+
+.services__title {
+  text-align: center;
   font-family: var(--title-fonts);
 }
 .services__activities img {
   height: 2rem;
+  margin-bottom: -1rem;
 }
 .activities__title {
   font-family: var(--title-fonts);
+
+  margin-bottom: 0rem;
 }
 .activities__text {
   font-family: var(--paragraph-fonts);
   font-size: 0.875rem;
+  text-align: center;
 }
 .services__activities {
   display: flex;
   align-items: center;
   justify-items: center;
   flex-direction: column;
-  width: 12rem;
+
+  max-width: 22rem;
+  padding: 0.5rem;
   height: auto;
-  border: 1px solid black;
+  border: 0.2rem double black;
+  box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.52);
   border-radius: 0.5rem;
-  margin: 0.5rem;
+  margin: 1rem;
   background: linear-gradient(to bottom, #55eabd9b, #78c3f237);
 }
 
-@media (min-width: 425px) {
+.main__featured {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured__heading,
+.card__title {
+  font-family: var(--title-fonts);
+}
+.featured__heading {
+  text-align: center;
+  margin-top: 2rem;
+}
+/*  */
+
+.featured__card {
+  height: 13rem;
+  width: 345px;
+  background-size: cover;
+  background-position: 100% 50%;
+  display: flex;
+  position: relative;
+  margin: 2rem;
+}
+.card__title {
+  background-color: white;
+  align-self: end;
+
+  margin-bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.card__text {
+  position: absolute;
+  margin-top: 0;
+  padding: 1rem;
+
+  background-color: #000000;
+  color: white;
+  font-family: var(--paragraph-fonts);
+}
+/**** Nedan varje unikt kort ****/
+.featured__card:nth-child(1) {
+  background-image: url(./assets/img/01-day.jpg);
+}
+.featured__card:nth-child(2) {
+  background-image: url(./assets/img/02-day.jpg);
+}
+.featured__card:nth-child(3) {
+  background-image: url(./assets/img/04-day.jpg);
+}
+/**** Ovan varje unikt kort ****/
+
+@media (min-width: 426px) {
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .background-image {
+    min-height: 22rem;
+  }
+  .main__services {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .services__activities {
+    min-width: 8rem;
+  }
+
+  /**** Nedan - hotelrum ****/
+  .main__featured {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .featured__card {
+    width: 330px;
+  }
+
+  /*.card__title {
+    width: 33vw;
+  }  */
 }
 
 /* .menu {
