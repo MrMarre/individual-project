@@ -13,6 +13,9 @@ font-family: "Montserrat", sans-serif;
 :root {
   --title-fonts: "AR One Sans", sans-serif;
   --paragraph-fonts: "Montserrat", sans-serif;
+  --bigger-paragraph-font: 1.4rem;
+  --smaller-paragraph-fonts: 0.875rem;
+  --bigger-heading-size: 2rem
 }
 
 body {
@@ -28,7 +31,7 @@ body {
   width: 100%;
   background-color: white;
   display: flex;
-
+  font-size: 0.875rem;
   justify-content: center;
   align-items: center;
 }
@@ -62,6 +65,8 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+
 .background-image__textbox--shade {
   background-color: rgba(0, 0, 0, 0.4);
   text-align: center;
@@ -129,7 +134,7 @@ body {
 
 .featured__card {
   height: 13rem;
-  width: 345px;
+  width: 345px; /* convert to rem */
   background-size: cover;
   background-position: 100% 50%;
   display: flex;
@@ -139,7 +144,7 @@ body {
 .card__title {
   background-color: white;
   align-self: end;
-
+  
   margin-bottom: 0;
   width: 100%;
   text-align: center;
@@ -165,6 +170,102 @@ body {
 }
 /**** Ovan varje unikt kort ****/
 
+/********************************
+
+PAGE 2 
+The class under aim for page two
+
+  ******************************/
+.background-image--page-options {
+  background-image: url(./assets/img/03-day.jpg);
+
+  background-size: cover;
+  width: 100%;
+  padding: 3rem 0 3rem 0;
+  background-position: 50% 83%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Just for reference - reduce scroll */
+/* .background-image__textbox--shade {
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  border-radius: 0.25rem;
+  font-family: var(--title-fonts);
+  color: rgba(255, 255, 255, 0.664);
+} */
+.main__search {
+  font-family: var(--title-fonts);
+  text-align: center;
+}
+.section__search {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .875rem;
+  
+}
+.search__card {
+  position: relative;
+display: flex;
+
+aspect-ratio: 16/9;
+  height: 14rem;
+  margin: 0 auto;
+  background-size: cover;
+  grid-column: span 1;
+  
+}
+.search__card .card__title {
+  position: absolute;
+  font-family: var(--paragraph-fonts);
+  font-size: var(--bigger-paragraph-font);
+  
+}
+.search__card .card__text {
+  padding: .3rem;
+  font-size: var(--bigger-heading-size);
+}
+.search__card:nth-child(1){
+  background-image: url(./assets/img/01-day.jpg);
+
+
+}
+.search__card:nth-child(2){
+  background-image: url(./assets/img/02-day.jpg);
+  
+  
+}
+.search__card:nth-child(3){
+  background-image: url(./assets/img/04-day.jpg);
+}
+.search__card:nth-child(4){
+  background-image: url(./assets/img/07-day.jpg);
+  
+  
+}
+.search__card:nth-child(5){
+  background-image: url(./assets/img/05-day.jpg);
+  
+}
+.search__card:nth-child(6){
+  background-image: url(./assets/img/06-day.jpg);
+  
+}
+.search__card:nth-child(7){
+  background-image: url(./assets/img/03-day.jpg);
+  
+}
+.search__card:nth-child(8){
+  background-image: url(./assets/img/08-day.jpg);
+  
+}
+.search__card:nth-child(9){
+  background-image: url(./assets/img/09-day.jpg);
+  
+}
+
+/**** Landing page below this line ****/
 @media (min-width: 426px) {
   main {
     max-width: 1200px;
@@ -193,12 +294,49 @@ body {
     width: 330px;
   }
 
-  /*.card__title {
-    width: 33vw;
-  }  */
+  
+
+/**** Landing page above this line ****/
+.background-image--page-options {
+  min-height: 25rem;
+}
 }
 
-/* .menu {
+@media (min-width: 768px) {
+  
+  .section__search {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    max-width: 861px;
+    margin: 0 auto;
+
+  }
+
+  p, a {
+    font-size: var(--bigger-paragraph-font);
+  }
+  h1, h2, h3 {
+    font-size: var(--bigger-heading-size);
+  }
+
+
+}
+@media (min-width: 940px) {
+  .section__search {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .search__card {
+    height: 7rem;
+  }
+  h1, h2, h3 {
+    font-size: var(--smaller-paragraph-fonts);
+  }
+}
+
+/* .card__title {
+    width: 33vw;
+  }  
+ .menu {
   background-color: white;
   width: 100vw;
   height: 3rem;
@@ -209,7 +347,7 @@ body {
 .header__logo {
   height: 2rem;
 }
- */
+  */
 /* .header__nav .navbar__list {
   display: flex;
-} */
+} 
