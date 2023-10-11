@@ -207,20 +207,17 @@ The class under aim for page two
 }
 .search__card {
   position: relative;
-display: flex;
-
-aspect-ratio: 16/9;
+  display: flex;
+  aspect-ratio: 16/9;
   height: 14rem;
   margin: 0 auto;
   background-size: cover;
   grid-column: span 1;
-  
 }
 .search__card .card__title {
   position: absolute;
   font-family: var(--paragraph-fonts);
   font-size: var(--bigger-paragraph-font);
-  
 }
 .search__card .card__text {
   padding: .3rem;
@@ -228,37 +225,27 @@ aspect-ratio: 16/9;
 }
 .search__card:nth-child(1){
   background-image: url(./assets/img/01-day.jpg);
-
-
 }
 .search__card:nth-child(2){
   background-image: url(./assets/img/02-day.jpg);
-  
-  
 }
 .search__card:nth-child(3){
   background-image: url(./assets/img/04-day.jpg);
 }
 .search__card:nth-child(4){
   background-image: url(./assets/img/07-day.jpg);
-  
-  
 }
 .search__card:nth-child(5){
   background-image: url(./assets/img/05-day.jpg);
-  
 }
 .search__card:nth-child(6){
   background-image: url(./assets/img/06-day.jpg);
-  
 }
 .search__card:nth-child(7){
   background-image: url(./assets/img/03-day.jpg);
-  
 }
 .search__card:nth-child(8){
   background-image: url(./assets/img/08-day.jpg);
-  
 }
 .search__card:nth-child(9){
   background-image: url(./assets/img/09-day.jpg);
