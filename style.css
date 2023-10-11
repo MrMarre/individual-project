@@ -315,7 +315,7 @@ aspect-ratio: 16/9;
   p, a {
     font-size: var(--bigger-paragraph-font);
   }
-  h1, h2, h3 {
+  h1, h3 {
     font-size: var(--bigger-heading-size);
   }
 
@@ -326,10 +326,13 @@ aspect-ratio: 16/9;
     grid-template-columns: repeat(3, 1fr);
   }
   .search__card {
-    height: 7rem;
+    height: 9rem;
   }
-  h1, h2, h3 {
-    font-size: var(--smaller-paragraph-fonts);
+   .card__title {
+    font-size: 0.875rem;
+  }
+  a {
+    
   }
 }
 
