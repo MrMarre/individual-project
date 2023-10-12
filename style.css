@@ -315,6 +315,15 @@ All below contains page 3
 .main__article--room-details {
   
 }
+.header__room-details,   .header__room-info{
+
+}
+
+
+
+.main__article--room-info {
+
+}
 
 
 /* Just for reference - reduce scroll */
@@ -372,16 +381,14 @@ All above contains page 3
     gap: 1rem;
     max-width: 861px;
     margin: 0 auto;
-
   }
 
   p, a {
-    font-size: var(--bigger-paragraph-font);
+    /* font-size: var(--bigger-paragraph-font); */
   }
-  h1, h3 {
+  /* h1, h3 {
     font-size: var(--bigger-heading-size);
-  }
-
+  } */
 
 }
 @media (min-width: 940px) {
@@ -394,28 +401,13 @@ All above contains page 3
    .card__title {
     font-size: 0.875rem;
   }
+   h1, .services__title {
+     font-size: var(--bigger-heading-size);
+   }
   p, a {
-    font-size: var(--smaller-paragraph-fonts);
+    font-size: var(--bigger-paragraph-font);
   }
   .background-image__text {
     font-size: 1.2rem;
 }
 
-/* .card__title {
-    width: 33vw;
-  }  
- .menu {
-  background-color: white;
-  width: 100vw;
-  height: 3rem;
-}
-.header__nav {
-  display: flex;
-}
-.header__logo {
-  height: 2rem;
-}
-  */
-/* .header__nav .navbar__list {
-  display: flex;
-} 
