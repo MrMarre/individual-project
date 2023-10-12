@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Our rooms</title>
+    <title>Bonz.AI - Find Your Perfect Room</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -21,7 +21,9 @@
           <li class="navbar__listitem">
             <a href="./options.html">ROOMS</a>
           </li>
-          <li class="navbar__listitem"><a href="">CONCEPT</a></li>
+          <li class="navbar__listitem">
+            <a href="./first-room.html">CONCEPT</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -32,28 +34,33 @@
       </article>
     </section>
     <main>
-      <h2 class="main__search">Search for Rooms</h2>
+      <h2 class="main__search">Find the Perfect Room for You</h2>
       <section class="main__form">
         <form>
-          <label for="name">Full name:</label>
-          <input type="text" name="name" required />
-          <label for="check-in">Check-in date:</label>
-          <input type="date" name="check-in" required />
-          <label for="check-out">Check-out date:</label>
-          <input type="date" name="check-out" required />
-          <label for="visitors">Number of Visitors:</label>
-          <input type="radio" name="visitor1" value="1" />
-          <label for="visitor1">1</label>
-          <input type="radio" name="visitor2" value="2" />
-          <label for="visitor2">2</label>
-          <input type="radio" name="visitors" value="more" />
-          <label for="visitorMore">More than 2</label>
+          <aside class="form__top">
+            <label for="name">Full name:</label>
+            <input type="text" name="name" required />
+            <label for="check-in">Check-in date:</label>
+            <input type="date" name="check-in" required />
+            <label for="check-out">Check-out date:</label>
+            <input type="date" name="check-out" required />
+            <!-- perhaps a scrollbar for prize -->
+          </aside>
+          <aside class="form__bottom">
+            <label for="visitors">Number of Visitors:</label>
 
-          <button type="submit">Book Now</button>
+            <label for="visitor1">1</label>
+            <input type="radio" name="visitor1" value="1" />
+            <label for="visitor2">2</label>
+            <input type="radio" name="visitor2" value="2" />
+            <label for="visitorMore">More than 2</label>
+            <input type="radio" name="visitors" value="more" />
+
+            <button class="btn--centered" type="submit">Book Now</button>
+          </aside>
         </form>
       </section>
-      <!-- insert som form elements below 
-      but before gallery -->
+      <h2 class="main__search">Our Selection</h2>
       <section class="section__search">
         <figure class="search__card">
           <h3 class="card__title">Family Room</h3>

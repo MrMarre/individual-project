@@ -13,7 +13,7 @@ font-family: "Montserrat", sans-serif;
 :root {
   --title-fonts: "AR One Sans", sans-serif;
   --paragraph-fonts: "Montserrat", sans-serif;
-  --bigger-paragraph-font: 1.4rem;
+  --bigger-paragraph-font: 1.3rem;
   --smaller-paragraph-fonts: 0.875rem;
   --bigger-heading-size: 2rem
 }
@@ -70,6 +70,7 @@ body {
 .background-image__textbox--shade {
   background-color: rgba(0, 0, 0, 0.4);
   text-align: center;
+  
   border-radius: 0.25rem;
   font-family: var(--title-fonts);
   color: rgba(255, 255, 255, 0.761);
@@ -187,18 +188,59 @@ The class under aim for page two
   justify-content: center;
   align-items: center;
 }
-/* Just for reference - reduce scroll */
-/* .background-image__textbox--shade {
-  background-color: rgba(0, 0, 0, 0.4);
-  text-align: center;
-  border-radius: 0.25rem;
-  font-family: var(--title-fonts);
-  color: rgba(255, 255, 255, 0.664);
-} */
+.background-image__title, .background-image__text {
+  padding: 0 1rem 0 1rem;
+
+}
 .main__search {
   font-family: var(--title-fonts);
   text-align: center;
+  margin-top: 3.5rem;
 }
+.main__form {
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+    /* Pushes to the left */
+  font-family: var(--paragraph-fonts);
+  font-size: var(--bigger-paragraph-font);
+  margin: 2rem 1rem 2rem 1rem;
+}
+.main__form input {
+  font-family: var(--paragraph-fonts);
+  font-size: var(--bigger-paragraph-font);
+}
+
+
+  
+
+.form__top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+}
+.form__bottom {
+  margin: 2rem;
+  position: relative;
+}
+.form__bottom .btn--centered {
+  align-self: center;
+  position: absolute;
+  top: 3.5rem;
+  left: 5rem;
+  right: 5rem;
+  font-family: var(--paragraph-fonts);
+  border-radius: .5rem;
+  padding: .3rem 0 .3rem 0;
+  ;
+}
+
+
+
 .section__search {
   display: grid;
   grid-template-columns: 1fr;
@@ -251,15 +293,35 @@ The class under aim for page two
   background-image: url(./assets/img/09-day.jpg);
   
 }
-form {
+/************************************  
+All below contains page 3
+*************************************/
+.background-image--page-first-room {
+  background-image: url(./assets/img/03-day.jpg);
+
+  background-size: cover;
+  width: 100%;
+  padding: 3rem 0 3rem 0;
+  background-position: 50% 83%;
   display: flex;
-  flex-direction: column;
-  align-items: first baseline; /* Pushes to the left */
+  justify-content: center;
+  align-items: center;
 }
-label {
-  font-family: var(--paragraph-fonts);
-  font-size:
-}
+
+
+
+
+/* Just for reference - reduce scroll */
+/* .background-image__textbox--shade {
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  border-radius: 0.25rem;
+  font-family: var(--title-fonts);
+  color: rgba(255, 255, 255, 0.664);
+} */
+/************************************  
+All above contains page 3
+*************************************/
 /**** Landing page below this line ****/
 @media (min-width: 426px) {
   main {
@@ -326,9 +388,11 @@ label {
    .card__title {
     font-size: 0.875rem;
   }
-  a {
-    
+  p, a {
+    font-size: var(--smaller-paragraph-fonts);
   }
+  .background-image__text {
+    font-size: 1.2rem;
 }
 
 /* .card__title {
