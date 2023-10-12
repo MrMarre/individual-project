@@ -28,7 +28,8 @@ body {
 
 .header {
   height: 4rem;
-  width: 100%;
+  /* width: 100%;  ta tillbaka om
+  det inte funkade för mobil*/
   background-color: white;
   display: flex;
   font-size: 0.875rem;
@@ -190,7 +191,6 @@ The class under aim for page two
 }
 .background-image__title, .background-image__text {
   padding: 0 1rem 0 1rem;
-
 }
 .main__search {
   font-family: var(--title-fonts);
@@ -297,7 +297,7 @@ The class under aim for page two
 All below contains page 3
 *************************************/
 .background-image--page-first-room {
-  background-image: url(./assets/img/03-day.jpg);
+  background-image: url(./assets/img/03-night.jpg);
 
   background-size: cover;
   width: 100%;
@@ -308,7 +308,13 @@ All below contains page 3
   align-items: center;
 }
 
+.main--room-overview {
+  /* Här lär du vilja lägga flex för att få kommande text att staplas horisontellt när skärmen blir större */
+}
 
+.main__article--room-details {
+  
+}
 
 
 /* Just for reference - reduce scroll */
