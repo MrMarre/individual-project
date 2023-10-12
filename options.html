@@ -33,6 +33,25 @@
     </section>
     <main>
       <h2 class="main__search">Search for Rooms</h2>
+      <section class="main__form">
+        <form>
+          <label for="name">Full name:</label>
+          <input type="text" name="name" required />
+          <label for="check-in">Check-in date:</label>
+          <input type="date" name="check-in" required />
+          <label for="check-out">Check-out date:</label>
+          <input type="date" name="check-out" required />
+          <label for="visitors">Number of Visitors:</label>
+          <input type="radio" name="visitor1" value="1" />
+          <label for="visitor1">1</label>
+          <input type="radio" name="visitor2" value="2" />
+          <label for="visitor2">2</label>
+          <input type="radio" name="visitors" value="more" />
+          <label for="visitorMore">More than 2</label>
+
+          <button type="submit">Book Now</button>
+        </form>
+      </section>
       <!-- insert som form elements below 
       but before gallery -->
       <section class="section__search">
