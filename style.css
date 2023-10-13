@@ -28,8 +28,7 @@ body {
 
 .header {
   height: 4rem;
-  /* width: 100%;  ta tillbaka om
-  det inte funkade för mobil */
+  width: 100%; 
   background-color: white;
   display: flex;
   font-size: 0.875rem;
@@ -307,15 +306,35 @@ All below contains page 3
   justify-content: center;
   align-items: center;
 }
+
+
+.search__card--room-info {
+height: 13rem;
+
+width: 21.563rem; 
+background-size: cover;
+background-position: 100% 50%;
+display: flex;
+position: relative;
+
+}
 /* Main around all content */
-.main--room-overview {
-  /* Här lär du vilja lägga flex för att få kommande text att läggas horisontellt när skärmen blir större */
+.search__card--room-info:nth-child(1) {
+  background-image: url(./assets/img/01-night.jpg);
   
+}
+.search__card--room-info:nth-child(2) {
+  background-image: url(./assets/img/02-night.jpg);
+}
+.search__card--room-info:nth-child(3) {
+  background-image: url(./assets/img/04-night.jpg);
+}
+.main__wrapper--room-overview {
+  /* Här lär du vilja lägga flex för att få kommande text att läggas horisontellt när skärmen blir större */
+  margin: 0 1rem 0 1rem;
 }
 /* biggest portion of text */
-.main__article--room-details {
-  
-}
+
 /* titles of page elements */
 .header__room-details,   .list__title--room-info{
   font-family: var(--title-fonts);
@@ -333,16 +352,6 @@ All below contains page 3
   /* margin:0; */
 }
 
-
-
-/* Just for reference - reduce scroll */
-/* .background-image__textbox--shade {
-  background-color: rgba(0, 0, 0, 0.4);
-  text-align: center;
-  border-radius: 0.25rem;
-  font-family: var(--title-fonts);
-  color: rgba(255, 255, 255, 0.664);
-} */
 /************************************  
 All above contains page 3
 *************************************/
@@ -352,7 +361,7 @@ All above contains page 3
     max-width: 1200px;
     margin: 0 auto;
   }
-  .background-image {
+  .background-image, .background-image--page-options { 
     min-height: 22rem;
   }
   .main__services {
@@ -372,15 +381,15 @@ All above contains page 3
     flex-wrap: wrap;
   }
   .featured__card {
-    width: 330px;
+    width: 20.625rem;
   }
 
   
 
 /**** Landing page above this line ****/
-.background-image--page-options {
+/* .background-image--page-options {
   min-height: 25rem;
-}
+} */
 }
 
 @media (min-width: 768px) {
@@ -391,14 +400,25 @@ All above contains page 3
     max-width: 861px;
     margin: 0 auto;
   }
+  
 
   p, a {
-    /* font-size: var(--bigger-paragraph-font); */
+    font-size: var(--bigger-paragraph-font); 
   }
-  /* h1, h3 {
+   h1, h3 {
     font-size: var(--bigger-heading-size);
-  } */
+  } 
 
+}
+@media (min-width: 852px) {
+  .section__preview {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section__card--room-info {
+    grid-column: span 1;
+    
+  }
 }
 @media (min-width: 940px) {
   .section__search {
@@ -410,6 +430,7 @@ All above contains page 3
    .card__title {
     font-size: 0.875rem;
   }
+  
    h1, .services__title {
      font-size: var(--bigger-heading-size);
    }
@@ -418,5 +439,15 @@ All above contains page 3
   }
   .background-image__text {
     font-size: 1.2rem;
+}
+@media (min-width: 1304px) {
+  .section__preview {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5rem;
+   }
+    .search__card--room-info {
+      grid-column: span 1;
+  }
 }
 
