@@ -29,7 +29,7 @@ body {
 .header {
   height: 4rem;
   /* width: 100%;  ta tillbaka om
-  det inte funkade för mobil*/
+  det inte funkade för mobil */
   background-color: white;
   display: flex;
   font-size: 0.875rem;
@@ -49,7 +49,7 @@ body {
 
 .header__nav a {
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.795);
+  color: rgba(0, 0, 0, 0.666);
   font-family: var(--title-fonts);
   font-weight: 600;
 
@@ -307,23 +307,32 @@ All below contains page 3
   justify-content: center;
   align-items: center;
 }
-
+/* Main around all content */
 .main--room-overview {
-  /* Här lär du vilja lägga flex för att få kommande text att staplas horisontellt när skärmen blir större */
+  /* Här lär du vilja lägga flex för att få kommande text att läggas horisontellt när skärmen blir större */
+  
 }
-
+/* biggest portion of text */
 .main__article--room-details {
   
 }
-.header__room-details,   .header__room-info{
-
+/* titles of page elements */
+.header__room-details,   .list__title--room-info{
+  font-family: var(--title-fonts);
+  font-size: var(--bigger-heading-size);
+}
+.details-text, .list__listitem {
+  font-family: var(--paragraph-fonts);
+  font-size: var(--bigger-paragraph-font);
 }
 
-
-
-.main__article--room-info {
-
+/* List with information about rooms */
+.list__room-info {
+  list-style: none;
+  padding:0;
+  /* margin:0; */
 }
+
 
 
 /* Just for reference - reduce scroll */
