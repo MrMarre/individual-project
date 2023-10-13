@@ -15,7 +15,7 @@ font-family: "Montserrat", sans-serif;
   --paragraph-fonts: "Montserrat", sans-serif;
   --bigger-paragraph-font: 1.3rem;
   --smaller-paragraph-fonts: 0.875rem;
-  --bigger-heading-size: 2rem
+  --bigger-heading-size: 2rem;
 }
 
 body {
@@ -25,10 +25,9 @@ body {
   margin: 0;
   background-color: rgb(196, 226, 236);
 }
-
 .header {
   height: 4rem;
-  width: 100%; 
+  width: 100%;
   background-color: white;
   display: flex;
   font-size: 0.875rem;
@@ -66,11 +65,10 @@ body {
   align-items: center;
 }
 
-
 .background-image__textbox--shade {
   background-color: rgba(0, 0, 0, 0.4);
   text-align: center;
-  
+
   border-radius: 0.25rem;
   font-family: var(--title-fonts);
   color: rgba(255, 255, 255, 0.761);
@@ -83,7 +81,6 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
-
 .services__title {
   text-align: center;
   font-family: var(--title-fonts);
@@ -131,7 +128,6 @@ body {
   text-align: center;
   margin-top: 2rem;
 }
-/*  */
 
 .featured__card {
   height: 13rem;
@@ -145,7 +141,7 @@ body {
 .card__title {
   background-color: white;
   align-self: end;
-  
+
   margin-bottom: 0;
   width: 100%;
   text-align: center;
@@ -188,7 +184,8 @@ The class under aim for page two
   justify-content: center;
   align-items: center;
 }
-.background-image__title, .background-image__text {
+.background-image__title,
+.background-image__text {
   padding: 0 1rem 0 1rem;
 }
 .main__search {
@@ -197,12 +194,12 @@ The class under aim for page two
   margin-top: 3.5rem;
 }
 .main__form {
-   display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
-    /* Pushes to the left */
+
+  /* Pushes to the left */
   font-family: var(--paragraph-fonts);
   font-size: var(--bigger-paragraph-font);
   margin: 2rem 1rem 2rem 1rem;
@@ -211,16 +208,11 @@ The class under aim for page two
   font-family: var(--paragraph-fonts);
   font-size: var(--bigger-paragraph-font);
 }
-
-
-  
-
 .form__top {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-
 }
 .form__bottom {
   margin: 2rem;
@@ -233,18 +225,13 @@ The class under aim for page two
   left: 5rem;
   right: 5rem;
   font-family: var(--paragraph-fonts);
-  border-radius: .5rem;
-  padding: .3rem 0 .3rem 0;
-  ;
+  border-radius: 0.5rem;
+  padding: 0.3rem 0 0.3rem 0;
 }
-
-
-
 .section__search {
   display: grid;
   grid-template-columns: 1fr;
-  gap: .875rem;
-  
+  gap: 0.875rem;
 }
 .search__card {
   position: relative;
@@ -261,36 +248,35 @@ The class under aim for page two
   font-size: var(--bigger-paragraph-font);
 }
 .search__card .card__text {
-  padding: .3rem;
+  padding: 0.3rem;
   font-size: var(--bigger-heading-size);
 }
-.search__card:nth-child(1){
+.search__card:nth-child(1) {
   background-image: url(./assets/img/01-day.jpg);
 }
-.search__card:nth-child(2){
+.search__card:nth-child(2) {
   background-image: url(./assets/img/02-day.jpg);
 }
-.search__card:nth-child(3){
+.search__card:nth-child(3) {
   background-image: url(./assets/img/04-day.jpg);
 }
-.search__card:nth-child(4){
+.search__card:nth-child(4) {
   background-image: url(./assets/img/07-day.jpg);
 }
-.search__card:nth-child(5){
+.search__card:nth-child(5) {
   background-image: url(./assets/img/05-day.jpg);
 }
-.search__card:nth-child(6){
+.search__card:nth-child(6) {
   background-image: url(./assets/img/06-day.jpg);
 }
-.search__card:nth-child(7){
+.search__card:nth-child(7) {
   background-image: url(./assets/img/03-day.jpg);
 }
-.search__card:nth-child(8){
+.search__card:nth-child(8) {
   background-image: url(./assets/img/08-day.jpg);
 }
-.search__card:nth-child(9){
+.search__card:nth-child(9) {
   background-image: url(./assets/img/09-day.jpg);
-  
 }
 /************************************  
 All below contains page 3
@@ -307,21 +293,18 @@ All below contains page 3
   align-items: center;
 }
 
-
 .search__card--room-info {
-height: 13rem;
+  height: 13rem;
 
-width: 21.563rem; 
-background-size: cover;
-background-position: 100% 50%;
-display: flex;
-position: relative;
-
+  width: 21.563rem;
+  background-size: cover;
+  background-position: 100% 50%;
+  display: flex;
+  position: relative;
 }
 /* Main around all content */
 .search__card--room-info:nth-child(1) {
   background-image: url(./assets/img/01-night.jpg);
-  
 }
 .search__card--room-info:nth-child(2) {
   background-image: url(./assets/img/02-night.jpg);
@@ -336,11 +319,13 @@ position: relative;
 /* biggest portion of text */
 
 /* titles of page elements */
-.header__room-details,   .list__title--room-info{
+.header__room-details,
+.list__title--room-info {
   font-family: var(--title-fonts);
   font-size: var(--bigger-heading-size);
 }
-.details-text, .list__listitem {
+.details-text,
+.list__listitem {
   font-family: var(--paragraph-fonts);
   font-size: var(--bigger-paragraph-font);
 }
@@ -348,7 +333,7 @@ position: relative;
 /* List with information about rooms */
 .list__room-info {
   list-style: none;
-  padding:0;
+  padding: 0;
   /* margin:0; */
 }
 
@@ -361,7 +346,9 @@ All above contains page 3
     max-width: 1200px;
     margin: 0 auto;
   }
-  .background-image, .background-image--page-options { 
+  .background-image,
+  .background-image--page-options,
+  .background-image--page-first-room {
     min-height: 22rem;
   }
   .main__services {
@@ -384,31 +371,28 @@ All above contains page 3
     width: 20.625rem;
   }
 
-  
-
-/**** Landing page above this line ****/
-/* .background-image--page-options {
+  /**** Landing page above this line ****/
+  /* .background-image--page-options {
   min-height: 25rem;
 } */
 }
 
 @media (min-width: 768px) {
-  
   .section__search {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     max-width: 861px;
     margin: 0 auto;
   }
-  
 
-  p, a {
-    font-size: var(--bigger-paragraph-font); 
+  p,
+  a {
+    font-size: var(--bigger-paragraph-font);
   }
-   h1, h3 {
+  h1,
+  h3 {
     font-size: var(--bigger-heading-size);
-  } 
-
+  }
 }
 @media (min-width: 852px) {
   .section__preview {
@@ -417,9 +401,20 @@ All above contains page 3
   }
   .section__card--room-info {
     grid-column: span 1;
-    
+  }
+  .main__wrapper--room-overview {
+    display: flex;
+    flex-direction: row;
+  }
+  .list__room-info,
+  .main__article--room-details {
+    max-width: 25rem;
+    margin: 0 auto;
+
+    /* justify-self: center; */
   }
 }
+
 @media (min-width: 940px) {
   .section__search {
     grid-template-columns: repeat(3, 1fr);
@@ -427,27 +422,28 @@ All above contains page 3
   .search__card {
     height: 9rem;
   }
-   .card__title {
+  .card__title {
     font-size: 0.875rem;
   }
-  
-   h1, .services__title {
-     font-size: var(--bigger-heading-size);
-   }
-  p, a {
+  h1,
+  .services__title {
+    font-size: var(--bigger-heading-size);
+  }
+  p,
+  a {
     font-size: var(--bigger-paragraph-font);
   }
   .background-image__text {
     font-size: 1.2rem;
+  }
 }
 @media (min-width: 1304px) {
   .section__preview {
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: .5rem;
-   }
-    .search__card--room-info {
-      grid-column: span 1;
+    gap: 0.5rem;
+  }
+  .search__card--room-info {
+    grid-column: span 1;
   }
 }
-
